@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.AuthActivity">
+
+    <TextView
+        android:id="@+id/titleTextAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleTextAuth"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:drawableStartCompat="@drawable/emoji_hi"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:id="@+id/subTitleTextAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subTitleTextAuth"
+        android:layout_below="@id/titleTextAuth"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/titleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleEditText"
+        android:layout_below="@id/subTitleTextAuth"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_background_edit_text_auth"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="5dp"
+        android:hint="@string/example_mail_ru"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#80000000"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/next"
+        android:background="@drawable/shape_btn_next_auth_disable"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/titleBottomAuthYandex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleBottomAuthYandex"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnNext"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/btnAuthYandex"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/titleBottomAuthYandex"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/btnAuthYandex"
+        android:background="@drawable/shape_btn_auth_yandex"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
