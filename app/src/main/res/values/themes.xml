@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MedicCenter" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">#83A0F8</item>
+        <item name="android:statusBarColor">#83A0F8</item>
+    </style>
+    <style name="MyBottomDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+</resources>

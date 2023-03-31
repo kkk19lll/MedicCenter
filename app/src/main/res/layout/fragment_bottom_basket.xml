@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context=".fragments.BottomBasketFragment">
+
+    <RelativeLayout
+        android:id="@+id/btnBasket"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/shape_btn_next_auth_enable"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/imageViewBasket"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ico_cart"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="В корзину"
+            android:layout_toEndOf="@id/imageViewBasket"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/setTextViewPriceBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="600 Р"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

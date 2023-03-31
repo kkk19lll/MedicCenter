@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.EnterCodeActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackAuth"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/shape_background_btn_back_auth"
+        android:src="@drawable/ico_arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <TextView
+        android:id="@+id/titleTextEnterCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleTextEnterCode"
+        android:layout_above="@id/editTextOnePinCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextOnePinCode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_background_btn_back_auth"
+        android:layout_above="@id/textViewTimerCode"
+        android:layout_marginStart="95dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTwoPinCode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_background_btn_back_auth"
+        android:layout_above="@id/textViewTimerCode"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:maxLength="1"
+        android:layout_toEndOf="@id/editTextOnePinCode"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextThreePinCode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_background_btn_back_auth"
+        android:layout_above="@id/textViewTimerCode"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:maxLength="1"
+        android:layout_toEndOf="@id/editTextTwoPinCode"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextFourPinCode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_background_btn_back_auth"
+        android:layout_above="@id/textViewTimerCode"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:maxLength="1"
+        android:layout_toEndOf="@id/editTextThreePinCode"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTimerCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+
+</RelativeLayout>

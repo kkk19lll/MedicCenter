@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_background_bottom_dialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleTextViewBottomDialogAnalyse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название анализа"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/imageBtnClose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_close_24"
+            android:background="@drawable/shape_background_btn_close_bottom_dialog"/>
+
+        <TextView
+            android:id="@+id/titleDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание"
+            android:textStyle="bold"
+            android:layout_below="@id/titleTextViewBottomDialogAnalyse"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/grey_text_color"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/setTextDescriptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Клинический анализ крови – это самое важное комплексное лабораторное исследование при обследовании человека с любым заболеванием. Изменение исследуемых показателей, как правило, происходит задолго до появления видимых симптомов болезни."
+            android:layout_below="@id/titleDescriptionTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/titlePreparationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подготовка"
+            android:textStyle="bold"
+            android:layout_below="@id/setTextDescriptionView"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey_text_color"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/setTextPreparationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlePreparationTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Кровь следует сдавать утром натощак, днем или вечером – через 4-5 часов после последнего приема пищи.\n\nЗа 1–2 дня до исследования необходимо исключить из рациона продукты с высоким содержанием жиров и алкоголь."
+            />
+
+        <TextView
+            android:id="@+id/titleDayResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результаты через:"
+            android:textStyle="bold"
+            android:layout_below="@id/setTextPreparationView"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/grey_text_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/setTextViewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleDayResults"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="1 день" />
+
+        <TextView
+            android:id="@+id/titleBioMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Биоматериал:"
+            android:layout_toEndOf="@id/titleDayResults"
+            android:textStyle="bold"
+            android:layout_below="@id/setTextPreparationView"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/grey_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/setTextBioMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleBioMaterial"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/titleDayResults"
+            android:textColor="@color/black"
+            android:text="Венозная кровь"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnAddToBasket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setTextBioMaterial"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_btn_next_auth_enable"
+            android:text="Добавить за 690 Р"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+    </RelativeLayout>
+</ScrollView>

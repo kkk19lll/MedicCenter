@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuAnalyse"
+        android:title="Анализы"
+        android:icon="@drawable/analys"/>
+
+    <item android:id="@+id/menuResults"
+        android:title="Результаты"
+        android:icon="@drawable/results"/>
+
+    <item android:id="@+id/menuSupport"
+        android:title="Поддержка"
+        android:icon="@drawable/support"/>
+
+    <item android:id="@+id/menuProfile"
+        android:title="Профиль"
+        android:icon="@drawable/profile"/>
+
+</menu>

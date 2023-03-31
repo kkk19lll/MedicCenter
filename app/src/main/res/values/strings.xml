@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MedicCenter</string>
+    <string name="smartLab">Смартлаб</string>
+    <string name="skip">Пропустить</string>
+    <string name="textview">TextView</string>
+    <string name="titleTextAuth">Добро пожаловать!</string>
+    <string name="subTitleTextAuth">Войдите, чтобы пользоваться функциями\nприложения</string>
+    <string name="titleEditText">Вход по E-mail</string>
+    <string name="example_mail_ru">example@mail.ru</string>
+    <string name="next">Далее</string>
+    <string name="titleBottomAuthYandex">Или войдите с помощью</string>
+    <string name="btnAuthYandex">Войти с Яндекс</string>
+    <string name="textViewTimerCode">Отправить код можно\nбудет только через 59 секунд</string>
+    <string name="titleTextEnterCode">Введите код из E-mail</string>
+    <string name="create_password">Создайте пароль</string>
+    <string name="subTitleCreatePassword">Для защиты ваших персональных данных</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+    <string name="_0">0</string>
+    <string-array name="gender">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_analyse">Искать анализы</string>
+    <string name="textViewStocksAndNews">Акции и новости</string>
+    <string name="basket">Корзина</string>
+    <string name="sum">Сумма</string>
+    <string name="one_patient">1 пациент</string>
+    <string name="setTextViewNameAnalyse">Клинический анализ крови с лейкоцитарной формулировкой</string>
+    <string name="setTextViewPriceAnalyse">690 Р</string>
+    <string name="btnNextToOrder">Перейти к оформлению заказа</string>
+</resources>

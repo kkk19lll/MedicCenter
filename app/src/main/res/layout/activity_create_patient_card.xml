@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.CreatePatientCardActivity">
+
+
+    <TextView
+        android:id="@+id/titleTextViewCreateCardPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создание карты\nпациента"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/skipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#1A6FEE"/>
+
+    <TextView
+        android:id="@+id/subTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Без карты пациента вы не сможете заказать анализы."
+        android:layout_below="@id/titleTextViewCreateCardPatient"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/subTitleTextView_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В картах пациентов будут храниться результаты\nанализов вас и ваших близких."
+        android:layout_below="@id/subTitleTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_background_edit_text_auth"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/subTitleTextView_2"
+        android:layout_marginTop="30dp"
+        android:hint="Имя"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="text"
+        android:textColorHint="#80000000"/>
+
+    <EditText
+        android:id="@+id/middleNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_background_edit_text_auth"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/firstNameEditText"
+        android:layout_marginTop="25dp"
+        android:hint="Отчество"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="text"
+        android:textColorHint="#80000000"/>
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_background_edit_text_auth"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/middleNameEditText"
+        android:layout_marginTop="25dp"
+        android:hint="Фамилия"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="text"
+        android:textColorHint="#80000000"/>
+
+    <EditText
+        android:id="@+id/dateBirthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_background_edit_text_auth"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/lastNameEditText"
+        android:layout_marginTop="25dp"
+        android:hint="Дата рождения"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:textColorHint="#80000000"/>
+
+    <Spinner
+        android:id="@+id/genderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_background_edit_text_auth"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/dateBirthEditText"
+        android:layout_marginTop="25dp"
+        android:hint="Пол"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        android:entries="@array/gender"
+        android:paddingEnd="10dp"
+        android:inputType="text"
+        android:textColorHint="#80000000"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_keyboard_arrow_down_24"
+        android:layout_below="@id/dateBirthEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/genderEditText"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Создать"
+        android:background="@drawable/shape_btn_next_auth_disable"
+        android:textAllCaps="false" />
+</RelativeLayout>

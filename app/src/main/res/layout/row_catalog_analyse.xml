@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/itemViewCatalog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/titleTextViewCatalogAnalyse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/countDayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextViewCatalogAnalyse"
+            android:layout_marginTop="20dp"
+            android:text="Дни"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/grey_text_color"/>
+
+        <TextView
+            android:id="@+id/costTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена"
+            android:layout_below="@id/countDayTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/umTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="руб"
+            android:layout_below="@id/countDayTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_toEndOf="@id/costTextView"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/btnAddAnalyse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Добавить"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/countDayTextView"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shape_btn_catalog_analyse"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

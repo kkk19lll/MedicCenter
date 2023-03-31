@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemViewBasket"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/setTextViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/setTextViewNameAnalyse"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="15dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/transparent"
+            android:src="@drawable/round_delete_x"
+            android:rotation="225"/>
+        <TextView
+            android:id="@+id/setTextViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/setTextViewPriceAnalyse"
+            android:layout_below="@id/setTextViewName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageButton
+            android:id="@+id/removeImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setTextViewName"
+            android:layout_toStartOf="@id/addImageButton"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_background_btn_back_auth"
+            android:src="@drawable/round_remove_24"/>
+        <ImageButton
+            android:id="@+id/addImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setTextViewName"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_background_btn_back_auth"
+            android:src="@drawable/round_add_24"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/setTextViewCountPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/one_patient"
+            android:layout_below="@id/setTextViewName"
+            android:layout_toStartOf="@id/removeImageButton"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

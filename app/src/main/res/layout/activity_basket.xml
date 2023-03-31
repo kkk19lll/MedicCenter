@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.BasketActivity">
+
+    <ImageButton
+        android:id="@+id/btnBackBasket"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/shape_background_btn_back_auth"
+        android:src="@drawable/ico_arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewTitleBasketActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBackBasket"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/basket"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:id="@+id/btnDeleteBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btnBackBasket"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/round_delete_outline_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBasket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitleBasketActivity"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewBasket"
+        android:text="@string/sum"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/setTextViewSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewBasket"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNextToOrder"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/btnNextToOrder"
+        android:background="@drawable/shape_btn_next_auth_disable"
+        android:textAllCaps="false"/>
+</RelativeLayout>
